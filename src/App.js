@@ -15,6 +15,7 @@ const App = () => {
   const handleGeneratePassword = () => {
     if (!includeUpperCase && !includeLowerCase && !includeNumbers && !includeSymbols) {
       notify("To generate password you must select atleast one checkbox", true)
+      console.log("Click atleast one checkbox");
     }
     else {
       let characterList = ""
